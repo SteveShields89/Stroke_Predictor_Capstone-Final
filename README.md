@@ -29,7 +29,6 @@
      
   ![Scatter of BMI and Age](http://localhost:8890/view/Stroke%20Predictor%20-%20Capstone/img/age_bmi_scatter.png)
   ![Hypertension](http://localhost:8890/view/Stroke%20Predictor%20-%20Capstone/img/hypertension.png)
-  
   ![AVG glucose and BMI](http://localhost:8890/view/Stroke%20Predictor%20-%20Capstone/img/avg_glucose_and_bmi.png)
   ![Stroke proportion](http://localhost:8890/view/Stroke%20Predictor%20-%20Capstone/img/stroke_prop.png)
     
