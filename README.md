@@ -28,8 +28,11 @@
     For EDA, I looked at multiple relationships between variables. I looked at the counts for diabetes present, hypertension, those who have had strokes, those with hypertension, and heart disease. I have added some of those below:
      
    ![Scatter of BMI and Age](http://localhost:8890/view/Stroke%20Predictor%20-%20Capstone/img/age_bmi_scatter.png)
+   
    ![Hypertension](http://localhost:8890/view/Stroke%20Predictor%20-%20Capstone/img/hypertension.png)
+   
    ![AVG glucose and BMI](http://localhost:8890/view/Stroke%20Predictor%20-%20Capstone/img/avg_glucose_and_bmi.png)
+   
    ![Stroke proportion](http://localhost:8890/view/Stroke%20Predictor%20-%20Capstone/img/stroke_prop.png)
     
    Finally,after one hot encoding our categorical variables, we went on to modeling. The modeling process was straight forward. I created a list of dictionaries with each classification model I wanted to use and made a loop using gridsearch to go through all of the models.After all the models had run, we looked at the accuracy to determine which one is the best for our chosen metric of success. To note, the baseline score was .978. Using the baseline, these models performed the best:
@@ -47,5 +50,6 @@
 
 ## Sources: 
  https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset
+ 
  https://www.cdc.gov/stroke/about.htm
  
