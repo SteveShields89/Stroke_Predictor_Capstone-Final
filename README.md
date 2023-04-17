@@ -27,13 +27,11 @@
    The data cleaning started off with handling null values in the smoking status column.I decided to map the NaN values to never smoked. On forms that people filled out there was probably an N/A or they just did not answer because they do not smoke. I then decided to handle the values of the bmi column. In the process of trying to decide what to do with the nulls, I saw some outliers. As a health professional, a 97.6 bmi is improbable. BMI usually tops out at ~45-55. A BMI of 40 is already extreme obesity so there is really no need to use the metric past that, as it won't give you any more detail. Waist to Hip ratio would be a better metric to use in such cases. In order to handle those outliers, I made a loop to iterate over the column and any values above 70 were multiplied by .1 making them low single digit/double digit numbers. After that I changed any null values to the mean of all bmi's which was around 28.6.I then went on to EDA since I felt satisified with those results.
     For EDA, I looked at multiple relationships between variables. I looked at the counts for diabetes present, hypertension, those who have had strokes, those with hypertension, and heart disease. I have added some of those below:
      
-   ![Scatter of BMI and Age](http://localhost:8890/view/Stroke%20Predictor%20-%20Capstone/img/age_bmi_scatter.png)
-   
-   ![Hypertension](http://localhost:8890/view/Stroke%20Predictor%20-%20Capstone/img/hypertension.png)
-   
-   ![AVG glucose and BMI](http://localhost:8890/view/Stroke%20Predictor%20-%20Capstone/img/avg_glucose_and_bmi.png)
-   
-   ![Stroke proportion](http://localhost:8890/view/Stroke%20Predictor%20-%20Capstone/img/stroke_prop.png)
+  ![Scatter of BMI and Age](http://localhost:8890/view/Stroke%20Predictor%20-%20Capstone/img/age_bmi_scatter.png)
+  ![Hypertension](http://localhost:8890/view/Stroke%20Predictor%20-%20Capstone/img/hypertension.png)
+  
+  ![AVG glucose and BMI](http://localhost:8890/view/Stroke%20Predictor%20-%20Capstone/img/avg_glucose_and_bmi.png)
+  ![Stroke proportion](http://localhost:8890/view/Stroke%20Predictor%20-%20Capstone/img/stroke_prop.png)
     
    Finally,after one hot encoding our categorical variables, we went on to modeling. The modeling process was straight forward. I created a list of dictionaries with each classification model I wanted to use and made a loop using gridsearch to go through all of the models.After all the models had run, we looked at the accuracy to determine which one is the best for our chosen metric of success. To note, the baseline score was .978. Using the baseline, these models performed the best:
 
